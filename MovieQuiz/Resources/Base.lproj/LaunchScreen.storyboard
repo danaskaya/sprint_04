@@ -16,9 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="8HU-sp-oOR">
-                                <rect key="frame" x="-731" y="-20" width="1125" height="936"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-XR-hA5">
                                 <rect key="frame" x="10" y="10" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -26,17 +23,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="3hm-e8-RmG">
-                                <rect key="frame" x="0.0" y="-19" width="414" height="938"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="NPn-sz-bKZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8HU-sp-oOR" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" constant="20" symbolic="YES" id="HIN-Ep-Qsm"/>
-                            <constraint firstItem="3hm-e8-RmG" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="HPN-HT-UDg"/>
-                            <constraint firstAttribute="top" secondItem="8HU-sp-oOR" secondAttribute="top" constant="20" symbolic="YES" id="OM2-ky-SoF"/>
-                            <constraint firstAttribute="trailing" secondItem="8HU-sp-oOR" secondAttribute="trailing" constant="20" symbolic="YES" id="gbv-Vb-4t9"/>
+                            <constraint firstItem="NPn-sz-bKZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="87V-Aj-qRF"/>
+                            <constraint firstItem="NPn-sz-bKZ" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="WTl-ox-gvb"/>
+                            <constraint firstAttribute="trailing" secondItem="NPn-sz-bKZ" secondAttribute="trailing" id="Wtz-o2-wDK"/>
+                            <constraint firstAttribute="top" secondItem="NPn-sz-bKZ" secondAttribute="top" id="kOa-J4-N4p"/>
                         </constraints>
                     </view>
                 </viewController>

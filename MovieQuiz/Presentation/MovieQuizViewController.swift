@@ -88,6 +88,7 @@ final class MovieQuizViewController: UIViewController {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.layer.cornerRadius = 20
         let firstQuestion = questions[currentQuestionIndex]
         let viewModel = convert(model: firstQuestion)
         show(quiz: viewModel)
@@ -133,12 +134,12 @@ final class MovieQuizViewController: UIViewController {
             results.append(Result(correctCount: correctAnswers, ResultDate: "\(Date())"))
             self.findBestResult(correctAnswers: correctAnswers, bestResult: bestResult)
             let viewModel = QuizResultsViewModel(title: "Этот раунд окончен!", text: """
-                                                 Ваш результат: \(correctAnswers)/10
-                                                 Количество сыгранных квизов: \(quizQount)
-                                                 Рекорд: \(bestResult)/10 (\(bestResultDate))
-                                                 Средняя точность: \(arithm).00% 
+Ваш результат: \(correctAnswers)/10
+Количество сыгранных квизов: \(quizQount)
+Рекорд: \(bestResult)/10 (\(bestResultDate))
+Средняя точность: \(arithm).00%
 """,
-                                                 buttonText: "Сыграть еще раз")
+                buttonText: "Сыграть еще раз")
             let alert = UIAlertController(
                 title: viewModel.title,
                 message: viewModel.text,
